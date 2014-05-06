@@ -186,8 +186,8 @@ WHITE:  - #FFF
   padding-left: 10px;
   padding-right: 10px;
 }
-.active{
-  background-color: red;
+.active {
+  background-color: red !important;
 }
 
 

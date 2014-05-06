@@ -18,26 +18,14 @@
     </div>
     <div class="history-raceday-container btn btn-group btn-group-justified">
       <div class="btn-group">
-        <button type="button" class="btn btn-default" data-toggle="button">History</button>
+        <button class="btn btn-default" id="history-button">History</button>
       </div>
       <div class="btn-group">
-        <button type="button" class="btn btn-default" data-toggle="button">Raceday</button>
+        <button class="btn btn-default" id="raceday-button">Raceday</button>
       </div>
     </div>
-    <!-- SWITCH CODE -->
- <!--    <div class="history-raceday-container" id="switch-home" data-init="mobileSwitchInit" data-title="profile settings">
-      <div class="col-xs-4">History</div>
-      <div class="col-xs-4"> <input data-role="switch" id="email-switch" checked="checked" /></div>
-      <div class="col-xs-4">Raceday</div> -->
-    <!-- </div> -->
   </div>
 </div>
-
-
-
-
-
-
 
 <div data-role="layout" data-id="mobile-tabstrip">
   <header data-role="header">
@@ -73,47 +61,26 @@
         border-radius: 4em;
     }
 
-
-/*
-    #switch-home h2 {
-      display: inline-block;
-      font-size: 1.1em;
-      margin: 1.5em 0 0 .7em;
-    }
-    #switch-home h2 span {
-      display: block;
-      clear: both;
-      font-size: 1.8em;
-      margin: .1em 0 0 0;
-}
-    #switch-home img {
-      width: 5em;
-      height: 5em;
-      float: left;
-      margin: 1em;
-      border: 1px solid rgba(0,0,0,.2);
-      -webkit-border-radius: 4em;
-      border-radius: 4em;
-}*/
-
 </style>
 
 <script>
-    function mobileSwitchInit() {
-        $("#wink-switch").kendoMobileSwitch();
+  $(document).ready(function() {
 
-        $("#subscription-switch").kendoMobileSwitch({
-            checked: true,
-            onLabel: "YES",
-            offLabel: "NO"
-        });
-    }
+    // $('#history-button').toggle(
+    //   function() {
+    //    $(this).addClass("active");
+    //   }, function() {
+    //    $(this).removeClass("active");
+    //   }
+    // );
 
-  $(".btn-group > .btn").click(function(){
-      $(this).toggleClass("active");
+    // NEED TO FIX THE BUTTON TOGGLE
+    $('button').on("click", function() {
+      // alert("hihi");
+      $(this).removeClass("active");
+      $(this).addClass("active");
+    });
   });
-
-
 </script>
 
 <script>
