@@ -228,7 +228,7 @@ Template.racedayInput.events({'submit form#race-8' : function(event, template) {
 var compute_score = function() {
 
   // initialize parameters
-  var user_horse_selection = [1, 5, 3, 7];
+  var user_horse_selection = [3, 2, 10, 7];
   var high_score = 0;
   var user_score = Meteor.user().profile.score;
   var score_array = [];
