@@ -6,7 +6,8 @@
       "iron-router": {},
       "slick": {},
       "accounts-ui-bootstrap-3": {},
-      "jquery-ui": {}
+      "jquery-ui": {},
+      "morris": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -34,10 +35,20 @@
         "tag": "v1.9.2",
         "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
       },
+      "morris": {
+        "git": "https://github.com/chhib/meteor-morris.git",
+        "tag": "v0.0.1",
+        "commit": "34416106d7d4c978cc21c651a3ae6629a3f2132d"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
         "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "raphael": {
+        "git": "https://github.com/chhib/meteor-raphael.git",
+        "tag": "v0.0.1",
+        "commit": "a90a37d8562bb7d2ddd559801caf61e28b85da4e"
       }
     }
   }
